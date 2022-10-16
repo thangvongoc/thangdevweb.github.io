@@ -10,8 +10,7 @@ html {
 }
 
 .content {
-    width: 1200px;
-    margin: 40px auto;
+    margin-top: 40px;
 }
 
 .content-title {

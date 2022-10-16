@@ -9,10 +9,13 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+#app {
+    overflow: hidden;
+}
+
 /* Content */
 .content {
-    width: 1200px;
-    margin: 60px auto 0 auto;
+    margin-top: 60px;
 }
 
 .product-detail {

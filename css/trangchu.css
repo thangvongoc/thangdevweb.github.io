@@ -1,5 +1,5 @@
 .wrapper{
-    height: auto;
+    overflow: hidden;
     width: 100%;
     background-color: rgb(235, 222, 222);
 }
@@ -12,10 +12,6 @@ html{
     margin: 0px;
     box-sizing: border-box;
 }
-.header {
-    width: 1200px;
-    margin: 0 auto;
-}
 
 .modau{
     display: flex;
@@ -25,6 +21,7 @@ html{
 
 .modau-1{
     padding: 10px;
+    padding-left: 0;
     text-shadow: -4px -4px 3px ;
     font-size: 50px;
     color: #084b48;
@@ -36,7 +33,6 @@ html{
    color: #084b48;
    font-size: large;
    padding-top: 20px;
-   margin-right: 20px;
    text-align: right;
    padding-bottom: 20px;
 }
@@ -80,9 +76,6 @@ html{
     font-size: 14px;
 }
 
-.search{
-    flex: 1;
-}
 .icon-search{
     position: relative;
     left: -6px;
@@ -90,13 +83,6 @@ html{
     height: 36px;
     border: 2px solid #084b48 ;
     background-color: #084b48;
-}
-
-.tenshop{
-    display: flex;
-    flex: 2;
-    justify-content: center;
-    align-items: center;
 }
 
 .tenshop img{
@@ -107,7 +93,7 @@ html{
 
 .bor{
     border: 2px solid #084b48 ;
-    width: 200px;
+    width: 160px;
     height: 30px;
     padding: 0 20px;
     height: 36px;
@@ -116,13 +102,12 @@ html{
 
 .mid-header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
 
 .giohang{
-    flex: 1;
     color: #084b48;
     text-align: right;
     cursor: pointer;
@@ -174,6 +159,7 @@ html{
     color: aliceblue;
 }
 .nav-menu{
+    margin-top: 26px;
     display: flex;
     justify-content: space-around;
     font-size: larger;
@@ -181,12 +167,7 @@ html{
     height: 90px;
 }
 
-.menu {
-    padding: 0px 110px;
-}
 .menu-slo{
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     font-size: larger;
@@ -203,7 +184,7 @@ html{
     text-align: center;
     background-color: #084b48;
     padding: 12px 60px;
-    min-width: 360px;
+    width: 360px;
     cursor: pointer;
     text-transform: uppercase;
 
@@ -293,10 +274,6 @@ aside{
     opacity: 0.5;
 }
 
-.content {
-    width: 1200px;
-    margin: 0 auto;
-}
 /* footter */
 
 .footer {

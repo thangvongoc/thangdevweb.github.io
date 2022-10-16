@@ -95,7 +95,7 @@ const productTypes = document.querySelectorAll('.product-type')
 function render(product) {
     const htmls = product.reduce((preVal, curVal) => {
         return preVal + `
-                <div class="col l-3" style="animation: sideOn 0.4s linear forwards;">
+                <div class="col l-3 m-4 c-6" style="animation: sideOn 0.4s linear forwards;">
                     <a href=${curVal.detailPath} class="product-item">
                         <div class="product-img-wrap">
                             <img src=${curVal.path} alt="" class="product-img">
