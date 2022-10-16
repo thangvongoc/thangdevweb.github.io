@@ -91,6 +91,7 @@ html{
 
 .tenshop {
     flex: 2;
+    text-align: center;
 }
 
 .tenshop img{
