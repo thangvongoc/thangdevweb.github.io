@@ -76,6 +76,10 @@ html{
     font-size: 14px;
 }
 
+.search {
+    flex: 1;
+}
+
 .icon-search{
     position: relative;
     left: -6px;
@@ -83,6 +87,10 @@ html{
     height: 36px;
     border: 2px solid #084b48 ;
     background-color: #084b48;
+}
+
+.tenshop {
+    flex: 2;
 }
 
 .tenshop img{
@@ -108,6 +116,7 @@ html{
 }
 
 .giohang{
+    flex: 1;
     color: #084b48;
     text-align: right;
     cursor: pointer;
