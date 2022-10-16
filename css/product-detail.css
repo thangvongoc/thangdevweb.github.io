@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Content */
+.content {
+    width: 1200px;
+    margin: 60px auto 0 auto;
+}
+
+.product-detail {
+    display: flex;
+    gap: 130px;
+}
+
+.product-img {
+    width: 538px;
+    height: 538px;
+    object-fit: cover;
+    border: 1px solid #CBCBCB;
+}
+
+.product-name {
+    font-size: 3rem;
+}
+
+.product-producer {
+    font-size: 1.2rem;
+    color: #7b7b7b;
+    padding: 10px 0 15px;
+}
+
+.product-desc {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.product-price {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+
+.product-quantity {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 20px 0;
+}
+
+.product-quantity input {
+    width: 100px;
+    height: 40px;
+    margin-left: 16px;
+    padding-left: 20px;
+    padding-right: 2px;
+    outline: none;
+    font-size: 1.4rem;
+    border: 1px solid #CBCBCB;
+}
+
+.product-add-btn button {
+    font-size: 1.8rem;
+    color: #fff;
+    width: 286px;
+    height: 65px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #084b48;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-add-btn button:hover {
+    background-color: transparent;
+    border-color: #084b48;
+    color: #084b48;
+}
+
+.product-describe {
+    margin-top: 30px;
+}
+
+.product-describe-title {
+    display: flex;
+}
+
+.product-describe-title h3 {
+    font-size: 1.4rem;
+    padding: 13px 25px;
+    border: 1px solid #C8C8C8;
+    border-bottom-color: transparent;
+}
+
+.product-describe-title div {
+    flex: 1;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.product-describe p {
+    padding: 30px 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.4px;
+    line-height: 1.6;
+}
+
+.related-product {
+    margin: 36px 0;
+}
+
+.related-title {
+    font-size: 3rem;
+    margin-bottom: 36px;
+}
+
+.product-item {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-img-wrap {
+    overflow: hidden;
+}
+
+.product-img-wrap .product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+
+.product-img-wrap .product-img:hover {
+    transform: scale(1.2);
+}
+
+.product-item .product-name {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #084b48;
+}
+
+.product-item .product-price {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #084b48;
+    text-align: center;
+    margin-top: 4px;
+}

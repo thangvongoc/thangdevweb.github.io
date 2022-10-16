@@ -1,0 +1,56 @@
+.footer {
+    background-color: #084b48;
+}
+.fot-tt{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-bottom: 2px solid rgb(19, 18, 18);
+    font-size: larger;
+}
+
+.fot tr {
+    display: block;
+    padding: 4px 0;
+    font-size: 13px;
+    color: #CBCBCB;
+}
+
+.fot-0 table{
+    text-align: left;
+    margin: 20px 0;
+}
+.fot-0 table td{
+    color: rgb(129, 119, 119);
+}
+.fot-1 table{
+    text-align: left;
+    margin-top: 20px;
+}
+.fot-2 table{
+    text-align: left;
+    margin-top: 20px;
+}
+.fot-3 table{
+    text-align: left;
+    margin-top: 20px;
+}
+.fot-tt a{
+    text-decoration: none;
+    color: rgb(129, 119, 119);
+    font-size: small;
+}
+
+.fot-slo {
+    padding: 10px 0;
+}
+
+.fot-slo h3{
+    color: #CBCBCB;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.fot-tt a:hover{
+    color: #C3412E;
+}

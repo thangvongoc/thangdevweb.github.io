@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.content-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.contact {
+    margin-top: 60px;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #323C3F;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 50%;
+    height: 40px;
+    padding: 0 20px;
+    color: #cb525f;
+    border: 1px solid #c8c8c8;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.input-message {
+    min-height: 150px;
+}
+
+
+.message-submit-btn {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #084b48;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.message-submit-btn:hover {
+    background-color: transparent;
+    border-color: #084b48;
+    color: #084b48;
+}

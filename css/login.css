@@ -1,0 +1,113 @@
+#app {
+    background-color: rgb(235, 222, 222);
+}
+
+/* Main */
+.main {
+    margin: 100px auto 80px;
+}
+
+.login__title,
+.forget-pw__title,
+.sign-up__title {
+    font-size: 1.9rem;
+    color: #212B25;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.login__form {
+
+}
+
+.login__form-group,
+.forget-pw__form-group,
+.sign-up__form-group {
+    margin-bottom: 15px;
+}
+
+.login__form-group label,
+.forget-pw__form-group label,
+.sign-up__form-group label {
+    display: block;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.login__form-group input,
+.forget-pw__form-group input,
+.sign-up__form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    color: #cb525f;
+    border: 1px solid #c8c8c8;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn-wrapper {
+    margin-top: 10px;
+}
+
+.socials-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socials-login h3 {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.socials-login-inner {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social-login {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #fff;
+    min-width: 130px;
+    text-decoration: none;
+}
+
+.social-login--facebook {
+    background-color: #3B5998;
+}
+
+.social-login--google {
+    background-color: #E14B33;
+}
+
+.social-login i {
+    font-size: 2rem;
+    padding: 8px 12px;
+}
+
+.social-login--google i {
+    border-right: 1px solid #C3412E;
+}
+
+.social-login--facebook i {
+    border-right: 1px solid #244488;
+}
+
+.social-login span {
+    margin-left: 12px;
+}
+
+/* Sign Up */
+.sign-up-section {
+    width: 100%;
+}
+

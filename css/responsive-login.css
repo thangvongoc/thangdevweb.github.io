@@ -1,0 +1,19 @@
+/* Mobile & Tablet */
+@media (max-width:63.9375em) {
+    .forget-pw-section {
+        margin-top: 40px;
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9375em) {
+    
+}
+
+/* Mobile */
+@media (max-width:46.1875em) {
+
+}
