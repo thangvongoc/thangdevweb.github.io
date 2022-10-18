@@ -18,7 +18,7 @@ function render() {
                         <p value=${curVal.price} class="product-price">${parseInt(curVal.price).toLocaleString('it-IT', {style : 'currency', currency : 'VND'})}</p>
                         <div class="cart-product-btn">
                             <span>-</span>
-                            <input type="text" min="1" value="1" class="quantity">
+                            <input disabled type="text" min="1" value="1" class="quantity">
                             <span>+</span>
                         </div>
                     </div>
