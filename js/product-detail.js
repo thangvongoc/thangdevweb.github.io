@@ -25,4 +25,5 @@ addBtn.onclick = () => {
         cartShop.innerText = `(${arrStorage.length})`
     }
     localStorage.setItem('product', JSON.stringify(arrStorage))
+    window.location = ('../cart.html')
 }
