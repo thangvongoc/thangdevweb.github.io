@@ -22,9 +22,7 @@ addBtn.onclick = () => {
     if (!isExist) {
         arrStorage.push(obj)
         const cartShop = document.querySelector('.giohang span')
-
-        if (!arr) cartShop.innerText = '(0)'
-        else cartShop.innerText = `(${arrStorage.length})`
+        cartShop.innerText = `(${arrStorage.length})`
     }
     localStorage.setItem('product', JSON.stringify(arrStorage))
 }
