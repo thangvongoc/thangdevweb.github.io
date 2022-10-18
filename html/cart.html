@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký tài khoản CHOCOLATE</title>
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/base-login.css">
-    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/grid.css">
-    <link rel="stylesheet" href="../css/responsive-login.css">
     <link rel="stylesheet" href="../css/responsive-home.css">
     <!-- Add Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Add Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div id="app">
+    <div class="wrapper">
         <!-- Begin: Header -->
         <header class="header">
             <div class="grid wide">
@@ -51,7 +49,7 @@
                     </div>
                     <div class="giohang">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="">GIỎ HÀNG</a>
+                        <a href="../html/cart.html">GIỎ HÀNG</a>
                         <!-- javacript -->
                         <span>(0)</span>
                     </div>
@@ -89,73 +87,38 @@
         </div>
         <!-- End: Nav -->
 
-        <!-- Begin: Content -->
-        <main class="main">
+        <!-- content -->
+        <div class="content">
             <div class="grid wide">
-                <div class="container">
-                    <section class="sign-up-section">
-                        <h3 class="sign-up__title">ĐĂNG KÝ TÀI KHOẢN</h3>
-                        <form class="sign-up__form">
-                            <div class="row">
-                                <div class="col l-6">
-                                    <div class="sign-up__form-group">
-                                        <label for="firstName">Họ *</label>
-                                        <input required type="text" name="" id="firstName">
-                                    </div>
-                                </div>
-                                <div class="col l-6">
-                                    <div class="sign-up__form-group">
-                                        <label for="lastName">Tên *</label>
-                                        <input required type="text" name="" id="lastName">
-                                    </div>
-                                </div>
-                                <div  class="col l-6">
-                                    <div class="sign-up__form-group">
-                                        <label for="email">Email *</label>
-                                        <input required onkeyup="checkEmail()" type="email" name="" id="email">
-                                    </div>
-                                </div>
-                                <div class="col l-6">
-                                    <div class="sign-up__form-group">
-                                        <label for="phone">Số điện thoại *</label>
-                                        <input required onkeyup="checkPhone()" type="text" name="" id="phone">
-                                    </div>
-                                </div>
-                                <div class="col l-12">
-                                    <div class="sign-up__form-group">
-                                        <label for="password">Mật khẩu *</label>
-                                        <input required onkeyup="checkPassWord()" type="password" name="" id="password">
-                                        <span style="font-size: 1.2rem; margin-top:6px; display:none; color:red;">Mật khẩu phải chứa ít nhất 8 kí tự.</span>
-                                    </div>
+                <h3 class="content-title">GIỎ HÀNG</h3>
+                <div class="row product">
+                    <div class="col l-8 m-8 c-12 product-js">
+                        <!-- <h3 class="cart-title">THÔNG TIN SẢN PHẨM</h3> -->
+                        <!-- <div class="cart-product">
+                            <img src="../img/Product/Love/Garden-Chocolate-001-500x500.jpg" alt="" class="cart-product-img">
+                            <div class="product-info">
+                                <h3 class="product-name">Chocolate</h3>
+                                <p value="364000" class="product-price">364.000đ</p>
+                                <div class="cart-product-btn">
+                                    <span>-</span>
+                                    <input type="text" min="1" value="1" class="quantity">
+                                    <span>+</span>
                                 </div>
                             </div>
-                            <!-- Button -->
-                            <div class="btn-wrapper">
-                                <button onclick="signUp()" class="btn sign-up-btn">ĐĂNG KÝ</button>
-                                <a href="./login.html" class="btn login-btn">Đăng nhập</a>
-                            </div>
-                        </form>
+                            <button class="delete-product">XÓA SẢN PHẨM</button>
+                        </div> -->
+                    </div>
 
-                        <!-- Socials Login -->
-                        <section class="socials-login">
-                            <h3>Hoặc đăng nhập bằng</h3>
-                            <div class="socials-login-inner">
-                                <a href="#" class="social-login social-login--facebook">
-                                    <i class='bx bxl-facebook'></i>
-                                    <span>Facebook</span>
-                                </a>
-                                <a href="#" class="social-login social-login--google">
-                                    <i class='bx bxl-google-plus' ></i>
-                                    <span>Google</span>
-                                </a>
-                            </div>
-                        </section>
-                    </section>
+                    <div class="col l-4 m-4 c-12">
+                        <h3 class="cart-title">TỔNG TIỀN</h3>
+                        <p class="total-price">1.000.000đ</p>
+                        <p class="notify-ship">Không bao gồm thuế và phí vận chuyển</p>
+                        <button class="checkout-btn">THANH TOÁN</button>
+                    </div>
                 </div>
             </div>
-        </main>
-        <!-- End: Content -->
-    
+        </div>
+
         <!-- Begin: Footer -->
         <footer class="footer">
             <div class="fot-tt">
@@ -240,6 +203,9 @@
         </footer>
         <!-- End: Footer -->
     </div>
-    <script src="../js/sign-up.js"></script>
+    </div>
+    <script type="module" src="../js/cart.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
