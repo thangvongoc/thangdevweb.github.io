@@ -54,6 +54,7 @@
 
     .fot-tt {
         flex-direction: column;
+        padding-left: 20px;
     }
 
 }
