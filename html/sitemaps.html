@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu</title>
+    <title>Sitemap</title>
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/intro.css">
     <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/responsive-home.css">
     <!-- Add Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Add Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
+    html {
+        font-size: 62.5%;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
 <body>
-    <div class="wrapper">
+    <div style="overflow: hidden;" id="app">
         <!-- Begin: Header -->
         <header class="header">
             <div class="grid wide">
@@ -49,7 +60,7 @@
                     </div>
                     <div class="giohang">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="">GIỎ HÀNG</a>
+                        <a href="./cart.html">GIỎ HÀNG</a>
                         <!-- javacript -->
                         <span>(0)</span>
                     </div>
@@ -86,46 +97,12 @@
             </div>
         </div>
         <!-- End: Nav -->
-
-        <!-- content -->
-        <div class="content">
-            <div class="grid wide">
-                <div class="page-nd">
-                    <h3>Teuscher Chocolate</h3>
-                    <p>
-                    <div class="p p-1">
-                        Được sản xuất từ những năm 1940, Teuscher là nhãn hiệu chocolate nổi tiếng ở Thụy Sĩ được đứng tên
-                        dựa trên người sáng lập ra nó - Doft Teuscher,
-                        người đã đi khắp các ngóc ngách trên thế giới để tìm ra những nguyên liệu cacao có hương vị tuyệt
-                        vời và độc đáo cùng các loại hoa quả và hạnh nhân khác để tạo ra một loại chocolate cho riêng mình.
-                        Sau nhiều năm tìm tòi các nguyên liệu và thử nghiệm các
-                        phương pháp, ông đã sản xuất ra được loại socola nổi tiếng như bây giờ.
-                    </div>
-                    <div class="p p-2">
-                        Hiện nay hệ thống cửa hàng của Teuscher có mặt trên toàn thế giới với hơn 100 loại socola được làm
-                        ra từ công thức ban đầu đã được truyền thụ qua các thế hệ.
-                        Teuscher nổi tiếng với loại socola kẹo mềm và socola rượu sâm panh.
-                    </div>
-                    <div class="p p-3">
-                        Ngày nay, Teuscher đã trở thành thương hiệu chocolate hàng đầu thế giới với hương vị độc đáo, tinh
-                     tế.
-                    </div>
-                    <div class="p p-4">
-                        Có hơn 100 loại chocolate được thương hiệu này sản xuất và bày bán, tất cả đều được chế biến bởi
-                    một công thức gia truyền. Chocolate Teuscher được biết đến với thành phần tự nhiên tốt nhất, đắt
-                    nhất và hoàn toàn không có hóa chất, phụ gia, chất bảo quản. Món chocolate độc đáo nhất của nhà
-                    Teuscher là champagne truffle - một sự pha trộn tuyệt vời giữa kem, bơ, champagne và phủ đường.
-                    </div>
-                    <div class="p p-5">
-                        Teuscher tự hào viết những chương truyện ngọt ngào về nét tinh hoa ẩm thực Thụy Sĩ ở nơi đất Việt.
-                    </div>
-                    </p>
-                    <div class="anh-intro">
-                        <img src="../img/anhintro.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+    
+        <!-- Begin: Content -->
+        <main style="text-align:center; margin-top: 40px;" class="content">
+            <img src="../img/sitemap.jpg" alt="">
+        </main>
+        <!-- End: Content -->
 
         <!-- Begin: Footer -->
         <footer class="footer">
@@ -211,8 +188,8 @@
         </footer>
         <!-- End: Footer -->
     </div>
-    </div>
+
+    <script src="../js/product.js"></script>
     <script src="../js/script.js"></script>
 </body>
-
 </html>
