@@ -1,216 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
-    <link rel="stylesheet" href="./css/trangchu.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/responsive-home.css">
-    <!-- Add Roboto Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Coffee House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 <body>
-    <div class="wrapper">
-        <!-- Begin: Header -->
-        <header class="header">
-            <div class="grid wide">
-                <div class="modau">
-                    <div class="modau-1">
-                        <h3>Chocolate every day</h3>
-                    </div>
-                    <div class="modau-2">
-                        <span class="cach">
-                            <i class="fa-solid fa-user"></i>
-                            <a href="./html/login.html">Đăng Nhập</a>
-                        </span>
-                        <div class="hotline">
-                            <p class="p-a"><a href="tel:0919966977">Hotline: 0919966977</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mid-header">
-                    <div class="search">
-                        <input type="search" placeholder="Tìm kiếm" class="bor">
-                        <button class="icon-search" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                    <div class="tenshop">
-                        <a href="./index.html"><img src="./img/logo-removebg-preview (1).png" alt=""></a>
-                    </div>
-                    <div class="giohang">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="../html/cart.html">GIỎ HÀNG</a>
-                        <!-- javacript -->
-                        <span>(0)</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End: Header -->
-
-        <!-- Begin: Nav -->
+    <!-- Topbar -->
+    <div class="top-bar">
+        <ul class="top-bar__list">
+            <li class="top-bar__item">
+                <a href="#" class="top-bar__link">
+                    <img src="./assets/img/location.webp" alt="">
+                    154 Cửa hàng khắp cả nước 
+                </a>
+            </li>
+            <li class="top-bar__item">
+                <a href="tel:1800.6936" class="top-bar__link">
+                    <img src="./assets/img/phone.webp" alt="">
+                    Đặt hàng 1800.6936 
+                </a>
+            </li>
+            <li class="top-bar__item">
+                <a href="#" class="top-bar__link">
+                    <img src="./assets/img/shipped.webp" alt="">
+                    Freeship từ 50.000 vnd 
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Begin: Header -->
+    <header class="header">
         <div class="grid wide">
-            <div class="nav-menu">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="./index.html">Trang chủ</a></li>
-                        <li><a href="./html/Introduce.html">Giới Thiệu</a></li>
-                        <li><a href="./html/sitemaps.html">Sitemap</a></li>
-                        <li><a href="./html/product.html">Sản phẩm</a></li>
-                        <li><a href="./html/sitemap.html">Liên hệ</a></li>
+            <div class="container">
+                <a href="#" class="header-logo">
+                    <img src="./assets/img/header-logo.svg" alt="">
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Cà phê</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Trà</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Menu</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Chuyện nhà</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Cảm hứng CloudFee</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Cửa hàng</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Tuyển dụng</a>
+                        </li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-        <div class="grid wide">
-            <div class="menu-slo">
-                <div class="menu-trai">
-                    <a href="">Quà Tặng Độc Đáo</a>
-                </div>
-                <div class="menu-giua">
-                    <a href="">Hương Vị Quyến Rủ</a>
-                </div>
-                <div class="menu-phai">
-                    <a href="">Mua Hàng Thuận Tiện</a>
+                <div class="auth-login">
+                    <label for="modal">
+                        <p>Đăng nhập</p>
+                    </label>
                 </div>
             </div>
         </div>
-        <!-- End: Nav -->
-        <div class="content">
-            <div class="grid wide">
-                <section>
-                    <div class="anhGT">
-                        <a href="./index.html"><img src="./img/Dxak3MxVAAAP82n.jpg" alt=""></a>
-                    </div>
-                    <div class="gthieu">
-                        <h1><img src="./img/chocolate-removebg-preview.png" alt=""></h1>
-                        <p>
-                            Chocolate không chỉ là một món ăn mà đã trở thành một nét văn hóa với lịch sử trải dài hơn 4000 năm,
-                            từ đế chế Maya hùng mạnh của vị thần cacao Ek Chuah linh thiêng cho tới những năm tháng viễn du khám phá
-                            của nhà thám hiểm lừng danh Christopher Columbus; từ những phát minh ép tách bơ cacao của người Hà Lan
-                            cho đến sáng tạo loại Praline Chocolate trứ danh của Vương quốc Bỉ những năm tháng thế kỷ 18, 19… Nét văn hóa tinh tế ấy,
-                            vốn mang nhiều bí ẩn về năng lượng tới mức được mệnh danh là “Thức ăn của Chúa Trời” (Food of the Gods) đến với Việt nam,
-                            nguyên vẹn từ công nghệ sản xuất được chuyển giao từ Vương quốc Bỉ, dưới sự giám sát chặt chẽ qui trình sản xuất,
-                            điều kiện bảo quản của các chuyên gia chocolate hàng đầu Vương quốc Bỉ, đáp ứng mọi nhu cầu và làm hài lòng cả những khách hàng khó tính nhất.
-                        </p>
-                    </div>
-                </section>
-                <aside>
-                    <div class="sp">
-                        <div class="sp-1">
-                            <img src="../img/chocolate_classic.jpg" alt="">
-                            <div class="chu">
-                            <button class="btn"><a href="./html/product.html">Xem sản phẩm</a></button>
-                            </div>
-                        </div>
-                        <div class="sp-2">
-                            <img src="../img/chocolate_love.jpg" alt="">
-                            <div class="chu">
-                                <button class="btn"><a href="./html/product.html">Xem sản phẩm</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-            <!-- sản phẩm -->
-        </div>
-        
-        <div class="chantrang">
-            <!-- Begin: Footer -->
-            <footer class="footer">
-                <div class="fot-tt">
-                    <div class="fot fot-0">
-                        <table>
-                            <th>Về Chúng Tôi</th>
-                            <tr>
-                                <td>Chocolate® – Popular</td>
-                            </tr>
-                            <tr>
-                                <td>Hộ Kinh Doanh Chocolate TT</td>
-                            </tr>
-                            <tr>
-                                <td>GPKD được cấp bởi Ủy ban nhân dân Quận 1– TP Hồ Chí Minh</td>
-                            </tr>
-                            <tr>
-                                <td>Mã số thuế: 8547618080</td>
-                            </tr>
-                            <tr>
-                                <td>Ngày cấp: 07/12/2020</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="fot fot-1">
-                        <table>
-                            <th>Thông Tin</th>
-                            <tr>
-                                <td><a href="./index.html">Trang chủ</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Giới thiệu</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Sản Phẩm</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Tin Tức</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Liên Hệ</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="fot fot-2">
-                        <table>
-                            <th>Hướng Dẫn</th>
-                            <tr>
-                                <td><a href="">Mua Hàng</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Thanh Toán</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Đổi trả</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Đăng ký</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="fot fot-3">
-                        <table>
-                            <th>Liên Hệ</th>
-                            <tr>
-                                <td><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href=""><i class="fa-solid fa-phone"></i> 0919966977</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href=""><i class="fa-solid fa-location-pin"></i> 12/1-Quang Trung</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="fot-slo">
-                    <h3>Uy Tín - Chất Lượng - Tận Tâm</h3>
-                </div>
-            </footer>
-        <!-- End: Footer -->
+    </header>
+    <!-- End: Header -->
+
+    <!-- Begin: Slider -->
+    <div class="slider">
+        <div class="slide-show">
+            <a href="#" class="slide-link">
+                <img src="./assets/img/slider/s3.webp" alt="" class="slide-img">
+            </a>
+            <a href="#" class="slide-link">
+                <img src="./assets/img/slider/s2.webp" alt="" class="slide-img">
+            </a>
+            <a href="#" class="slide-link">
+                <img src="./assets/img/slider/s3.webp" alt="" class="slide-img">
+            </a>
+            <a href="#" class="slide-link">
+                <img src="./assets/img/slider/s4.webp" alt="" class="slide-img">
+            </a>
         </div>
     </div>
+    <!-- End: Slider -->
 
-    <script src="./js/script.js"></script>
+    <!-- Begin: Content -->
+    <main class="content">
+        <div class="menu-home">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6">
+                        <a href="#" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic1.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="./products/hn.html" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic2.webp" alt="">
+                            <div class="menu-home__text">
+                                <p class="menu-home__title">CloudFee Hạnh Nhân Nướng</p>
+                                <p value="49000" class="menu-home__price">49.000 đ</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="./products/suada.html" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic3.webp" alt="">
+                            <div class="menu-home__text">
+                                <p class="menu-home__title">The Coffee House sữa đá</p>
+                                <p value="39000" class="menu-home__price">39.000 đ</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="./products/hitea.html" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic4.webp" alt="">
+                            <div class="menu-home__text">
+                                <p class="menu-home__title">Hi-Tea Vải</p>
+                                <p value="49000" class="menu-home__price">49.000 đ</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="./products/suada1.html" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic5.webp" alt="">
+                            <div class="menu-home__text">
+                                <p class="menu-home__title">Cà Phê Sữa Đá</p>
+                                <p value="29000" class="menu-home__price">29.000 đ</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="./products/banhmi.html" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic6.webp" alt="">
+                            <div class="menu-home__text">
+                                <p class="menu-home__title">Bánh Mì VN Thịt Nguội</p>
+                                <p value="35000" class="menu-home__price">35.000 đ</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3">
+                        <a href="./products/mochi.html" class="menu-home__link">
+                            <img src="./assets/img/menu-home/pic7.webp" alt="">
+                            <div class="menu-home__text">
+                                <p class="menu-home__title">Mochi Kem Chocolate</p>
+                                <p value="19000" class="menu-home__price">19.000 đ</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cloud-tea">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6">
+                        <img src="./assets/img/cloud-tea/pic1.webp" alt="" class="cloud-tea__img">
+                    </div>
+                    <div class="col l-6">
+                        <img src="./assets/img/cloud-tea/pic2.webp" alt="" class="cloud-tea__img">
+                        <div class="cloud-tea__desc">
+                            Vừa êm mượt dịu dàng, vừa bùng nổ nồng nàn, BST Trà Sữa CloudTea Hương Vị Nụ Hôn Đầu mang đến trải nghiệm đầy mới mẻ. Chạm môi là foam béo mịn bồng bềnh, càng thêm đậm đà nhờ topping vụn bánh quy phô mai hoặc bột ca cao thơm lừng. Kế tiếp là tầng trà sữa sóng sánh, đậm hương, rõ vị. Và tầng thạch nguyên chất, dai giòn giúp giữ trọn vị trà sữa đến ngụm cuối cùng. 3 tầng hòa quyện, nhấp một ngụm là ghiền, nhớ mãi không thôi.
+                        </div>
+                        <a href="#" class="cloud-tea__try-btn btn">Thử ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-home">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-5">
+                        <h3 class="store-home__title">The Coffee House <br>  Vinh Lotte Mart</h3>
+                        <p class="store-home__sub-title">Nhà mới Nghệ An toạ lạc tại Lotte Mart (TP. Vinh), nằm bên cạnh những con phố sầm uất nhộn nhịp là không gian ấm cúng và hương vị quen thuộc từ Nhà, mang đến nhiều cung bậc cảm xúc cho những buổi hẹn hò cùng bạn bè.</p>
+                        <a href="#" class="store-home__btn btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="col l-7">
+                        <div class="slider">
+                            <div style="width: 300%;" class="slide-show">
+                                <a href="#" class="slide-link">
+                                    <img style="border-radius: 10px;" src="./assets/img/store/pic1.webp" alt="">
+                                </a>
+                                <a href="#" class="slide-link">
+                                    <img style="border-radius: 10px;" src="./assets/img/store/pic2.webp" alt="">
+                                </a>
+                                <a href="#" class="slide-link">
+                                    <img style="border-radius: 10px;" src="./assets/img/store/pic3.webp" alt="">
+                                </a>
+                                <a href="#" class="slide-link">
+                                    <img style="border-radius: 10px;" src="./assets/img/store/pic4.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-home">
+            <div class="grid wide">
+                <div class="blog-home__heading">
+                    <img src="./assets/img/blog-home.webp" alt="">
+                    <h3 class="blog-home__title">Chuyện Nhà</h3>
+                </div>
+                <a href="#" class="blog-home__sub-title">Coffeeholic</a>
+                <div class="row">
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic1.jpg" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic2.webp" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic3.webp" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="blog-home__sub-title">Teaholic</a>
+                <div class="row">
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic1.jpg" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic2.webp" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic3.webp" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="blog-home__sub-title">Blog</a>
+                <div class="row">
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic1.jpg" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic2.webp" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="blog-home__img">
+                            <img src="./assets/img/blog/pic3.webp" alt="">
+                        </div>
+                        <div class="blog-home__text">
+                            <p class="blog-home__date">15/09/2022</p>
+                            <h3 class="blog-home__card-title">CÀ PHÊ SỮA ESPRESSO THE COFFEE HOUSE - BẬT LON BẬT VỊ NGON</h3>
+                            <p class="blog-home__card-text">Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End: Content -->
+
+    <!-- Begin: Footer -->
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3">
+                    <div class="footer__service">
+                        <h3 class="footer__title">Giới thiệu</h3>
+                        <ul class="footer__service-list">
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Về chúng tôi</a>
+                            </li>
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Sản phẩm</a>
+                            </li>
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Khuyến mãi</a>
+                            </li>
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Chuyện cà phê</a>
+                            </li>
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Cửa hàng</a>
+                            </li>
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="footer__service">
+                        <h3 class="footer__title">Điều khoản</h3>
+                        <ul class="footer__service-list">
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Chính sách bảo mật thông tin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="footer__service">
+                        <h3 class="footer__title">
+                            <img src="./assets/img/footer-1.webp" alt="">
+                            Đặt hàng: 1800 6936
+                        </h3>
+                        <h3 class="footer__title">
+                            <img src="./assets/img/footer-2.webp" alt="">
+                            Liên hệ
+                        </h3>
+                        <ul class="footer__service-list">
+                            <li class="footer__service-item">
+                                <a href="#" class="footer__service-link">Tầng 3-4 Hub Building <br>
+                                    195/10E Điện Biên Phủ, P.15 , <br>
+                                    Q.Bình Thạnh, TP.Hồ Chí Minh</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="footer__service">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3919.1772784806058!2d106.70129521471851!3d10.797730542307061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTk1LzEwZSDEkWnhu4duIGJpw6puIHBo4bunIHBoxrDhu51uZyAxNSBxdeG6rW4gYsOsbmggdGjhuqFuaCB0cC5oY20!5e0!3m2!1svi!2s!4v1669521237326!5m2!1svi!2s" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin: 15px 0 20px;">
+            <p class="footer-bottom">
+                Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN <br>
+                Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYÊN KHA <br>
+                Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh   Điện thoại: (028) 7107 8079   Email: hi@thecoffeehouse.vn <br>
+                © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+            </p>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+    <!-- Modal Login -->
+        <input type="checkbox" name="" hidden id="modal">
+        <div class="modal">
+            <label for="modal">
+                <div class="modal-overlay"></div>
+            </label>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>ĐĂNG NHẬP TÀI KHOẢN THE COFFEE HOUSE</h4>
+                    <label style="cursor: pointer;" for="modal">
+                        <p><span>&times;</span></p>
+                    </label>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="username">Tên đăng nhập</label>
+                            <input type="text" id="username" required placeholder="Nhập email hoặc số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Mật khẩu</label>
+                            <input type="password" id="pwd" required placeholder="Nhập mật khẩu">
+                        </div>
+                    </form>
+                    <p class="forget-pwd">
+                        <a href="#">Đăng ký</a>
+                    </p>
+                    <button class="login-btn">ĐĂNG NHẬP</button>
+                </div>
+            </div>
+        </div>
+    <script src="./js/auth.js"></script>
 </body>
-
 </html>
